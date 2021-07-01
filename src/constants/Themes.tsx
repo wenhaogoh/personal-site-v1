@@ -1,6 +1,6 @@
 import { DefaultTheme } from "styled-components";
 
-interface Themes {
+interface IThemes {
   [key: string]: DefaultTheme;
 }
 
@@ -14,12 +14,12 @@ const darkTheme: DefaultTheme = {
   fontColor: "white",
 };
 
-export const themes: Themes = {
+export const Themes: IThemes = {
   light: lightTheme,
   dark: darkTheme,
 };
 
-export const Theme = {
+export const ThemeNames = {
   LIGHT: "light",
   DARK: "dark",
 };

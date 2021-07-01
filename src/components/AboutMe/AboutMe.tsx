@@ -14,13 +14,13 @@ const AboutMe = () => {
       </Paragraph>
       <Paragraph>
         The game of Go has been a passion of mine since I was six. Hence, it was
-        no surprise that the news of AlphaGo's triumph over the top professional
-        Go player back in 2016 fascinated me greatly. It was then when I was
-        introduced to the world of computer science.
+        no surprise that AlphaGo's triumph over the top professional Go player
+        back in 2016 fascinated me greatly. It was then when I was introduced to
+        the world of computer science.
       </Paragraph>
       <Paragraph>
         I've been exploring the boundless possibilities of technology ever since
-        and have fallen in love with building beautiful applications that are
+        and I've fallen in love with building beautiful applications that are
         both fun and useful.
       </Paragraph>
     </AboutMeContainer>

@@ -1,17 +1,21 @@
 import { PagesContainer } from "./PagesElements";
-import Page from "../Page/Page";
+import { Element } from "react-scroll";
 import Landing from "../Landing/Landing";
 import AboutMe from "../AboutMe/AboutMe";
+import Skills from "../Skills/Skills";
 
 const Pages = () => {
   return (
     <PagesContainer>
-      <Page name="landing">
+      <Element name="landing">
         <Landing />
-      </Page>
-      <Page name="aboutMe">
+      </Element>
+      <Element name="aboutMe">
         <AboutMe />
-      </Page>
+      </Element>
+      <Element name="skills">
+        <Skills />
+      </Element>
     </PagesContainer>
   );
 };

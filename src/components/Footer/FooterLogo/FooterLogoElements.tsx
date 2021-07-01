@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const NavbarLogoContainer = styled.div`
+export const FooterLogoContainer = styled.div`
   display: flex;
   padding: 0.5rem;
   font-size: 20px;

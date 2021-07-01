@@ -46,6 +46,8 @@ export const NavbarLinks = styled.div<NavbarLinksProps>`
 export const NavbarScreen = styled.div`
   display: none;
   @media screen and (min-width: 1024px) {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 `;

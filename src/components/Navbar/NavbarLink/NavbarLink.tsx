@@ -6,12 +6,13 @@ interface NavbarLinkProps {
   children: ReactChild;
   to: string;
   toggleMenu: (state: boolean) => void;
+  offset?: number;
 }
 
-const NavbarLink = ({ children, to, toggleMenu }: NavbarLinkProps) => {
+const NavbarLink = ({ children, to, toggleMenu, offset }: NavbarLinkProps) => {
   return (
     <NavbarLinkContainer>
-      <Link to={to} smooth onClick={() => toggleMenu(false)}>
+      <Link to={to} smooth onClick={() => toggleMenu(false)} offset={offset}>
         {children}
       </Link>
     </NavbarLinkContainer>
