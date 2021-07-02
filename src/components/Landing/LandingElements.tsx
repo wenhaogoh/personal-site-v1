@@ -5,6 +5,7 @@ export const LandingContainer = styled.div`
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  padding: 0 0.5rem;
 `;
 
 export const LandingWrapper = styled.div``;

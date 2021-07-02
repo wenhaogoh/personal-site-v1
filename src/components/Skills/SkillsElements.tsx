@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
 export const SkillsContainer = styled.div`
-  padding: 5rem 0;
+  padding: 5rem 0.5rem;
 
   @media screen and (min-width: 1024px) {
-    padding: 7rem 0;
+    padding: 7rem 0.5rem;
   }
 `;
 
@@ -35,25 +35,25 @@ export const InnerSkillsGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 55px);
   grid-gap: 1rem;
-  padding: 2.22rem;
+  padding: 1.72rem;
 
   @media screen and (min-width: 375px) {
-    grid-gap: 3rem;
+    grid-gap: 2.5rem;
     padding: 1.9rem;
   }
 
   @media screen and (min-width: 414px) {
     grid-gap: 3.16rem;
-    padding: 3rem;
+    padding: 2.5rem;
   }
 
   @media screen and (min-width: 768px) {
-    grid-gap: 3rem;
+    grid-gap: 2.5rem;
     padding: 2.22rem;
   }
 
   @media screen and (min-width: 1024px) {
-    grid-gap: 1rem;
+    grid-gap: 0.5em;
     padding: 1.72rem;
   }
 `;

@@ -1,6 +1,7 @@
 import { ReactChild } from "react";
 import { NavbarLinkContainer } from "./NavbarLinkElements";
 import { Link } from "react-scroll";
+import "./NavbarLink.css";
 
 interface NavbarLinkProps {
   children: ReactChild;
@@ -12,7 +13,13 @@ interface NavbarLinkProps {
 const NavbarLink = ({ children, to, toggleMenu, offset }: NavbarLinkProps) => {
   return (
     <NavbarLinkContainer>
-      <Link to={to} smooth onClick={() => toggleMenu(false)} offset={offset}>
+      <Link
+        className="underline-effect"
+        to={to}
+        smooth
+        onClick={() => toggleMenu(false)}
+        offset={offset}
+      >
         {children}
       </Link>
     </NavbarLinkContainer>

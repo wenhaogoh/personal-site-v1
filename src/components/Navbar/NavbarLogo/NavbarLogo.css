@@ -1,0 +1,27 @@
+.underline-effect {
+  display: inline-block;
+  position: relative;
+}
+
+.underline-effect:hover {
+  cursor: pointer;
+}
+
+.underline-effect:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  height: 1em;
+  width: 100%;
+  border-bottom: 1px solid;
+  margin-top: 10px;
+  opacity: 0;
+  transition: opacity 0.35s, transform 0.35s;
+  transform: scale(0, 1);
+}
+
+.underline-effect:hover:after {
+  opacity: 1;
+  transform: scale(1);
+}
