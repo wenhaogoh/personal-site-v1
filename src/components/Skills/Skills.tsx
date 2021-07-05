@@ -7,7 +7,7 @@ import {
 } from "./SkillsElements";
 import Title from "../Title/Title";
 import Paragraph from "../Paragraph/Paragraph";
-import SkillIcon from "./SkillIcon/SkillIcon";
+import SkillIcon from "../SkillIcon/SkillIcon";
 import {
   Languages,
   Frameworks,
@@ -15,6 +15,7 @@ import {
   Databases,
   Platforms,
   Tools,
+  Environments,
 } from "../../constants/SkillIcons";
 
 const Skills = () => {
@@ -27,8 +28,8 @@ const Skills = () => {
           <Paragraph>languages.</Paragraph>
           <SkillsBox>
             <InnerSkillsGrid>
-              {Languages.map((language) => (
-                <SkillIcon skillIcon={language} />
+              {Languages.map((language, index) => (
+                <SkillIcon key={index} skillIcon={language} />
               ))}
             </InnerSkillsGrid>
           </SkillsBox>
@@ -38,8 +39,8 @@ const Skills = () => {
           <Paragraph>frameworks.</Paragraph>
           <SkillsBox>
             <InnerSkillsGrid>
-              {Frameworks.map((framework) => (
-                <SkillIcon skillIcon={framework} />
+              {Frameworks.map((framework, index) => (
+                <SkillIcon key={index} skillIcon={framework} />
               ))}
             </InnerSkillsGrid>
           </SkillsBox>
@@ -49,8 +50,8 @@ const Skills = () => {
           <Paragraph>libraries.</Paragraph>
           <SkillsBox>
             <InnerSkillsGrid>
-              {Libraries.map((library) => (
-                <SkillIcon skillIcon={library} />
+              {Libraries.map((library, index) => (
+                <SkillIcon key={index} skillIcon={library} />
               ))}
             </InnerSkillsGrid>
           </SkillsBox>
@@ -60,8 +61,19 @@ const Skills = () => {
           <Paragraph>databases.</Paragraph>
           <SkillsBox>
             <InnerSkillsGrid>
-              {Databases.map((database) => (
-                <SkillIcon skillIcon={database} />
+              {Databases.map((database, index) => (
+                <SkillIcon key={index} skillIcon={database} />
+              ))}
+            </InnerSkillsGrid>
+          </SkillsBox>
+        </SkillsWrapper>
+
+        <SkillsWrapper>
+          <Paragraph>environments.</Paragraph>
+          <SkillsBox>
+            <InnerSkillsGrid>
+              {Environments.map((environment, index) => (
+                <SkillIcon key={index} skillIcon={environment} />
               ))}
             </InnerSkillsGrid>
           </SkillsBox>
@@ -71,8 +83,8 @@ const Skills = () => {
           <Paragraph>platforms.</Paragraph>
           <SkillsBox>
             <InnerSkillsGrid>
-              {Platforms.map((platform) => (
-                <SkillIcon skillIcon={platform} />
+              {Platforms.map((platform, index) => (
+                <SkillIcon key={index} skillIcon={platform} />
               ))}
             </InnerSkillsGrid>
           </SkillsBox>
@@ -82,8 +94,8 @@ const Skills = () => {
           <Paragraph>tools.</Paragraph>
           <SkillsBox>
             <InnerSkillsGrid>
-              {Tools.map((tool) => (
-                <SkillIcon skillIcon={tool} />
+              {Tools.map((tool, index) => (
+                <SkillIcon key={index} skillIcon={tool} />
               ))}
             </InnerSkillsGrid>
           </SkillsBox>

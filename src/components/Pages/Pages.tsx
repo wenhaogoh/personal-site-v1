@@ -3,6 +3,7 @@ import { Element } from "react-scroll";
 import Landing from "../Landing/Landing";
 import AboutMe from "../AboutMe/AboutMe";
 import Skills from "../Skills/Skills";
+import Experience from "../Experience/Experience";
 
 const Pages = () => {
   return (
@@ -15,6 +16,9 @@ const Pages = () => {
       </Element>
       <Element name="skills">
         <Skills />
+      </Element>
+      <Element name="experience">
+        <Experience />
       </Element>
     </PagesContainer>
   );

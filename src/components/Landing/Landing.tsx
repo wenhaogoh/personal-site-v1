@@ -5,6 +5,7 @@ import {
 } from "./LandingElements";
 import Typewriter from "typewriter-effect";
 import Paragraph from "../Paragraph/Paragraph";
+import UnderlinedLink from "../UnderlinedLink/UnderlinedLink";
 
 const Landing = () => {
   return (
@@ -21,7 +22,10 @@ const Landing = () => {
         <Paragraph>
           I'm Wen Hao and I'm an aspiring software engineer.
         </Paragraph>
-        <Paragraph>Currently interning @ PayPal.</Paragraph>
+        <Paragraph>
+          Currently interning @{" "}
+          <UnderlinedLink url="https://www.paypal.com/">PayPal</UnderlinedLink>
+        </Paragraph>
       </LandingWrapper>
     </LandingContainer>
   );

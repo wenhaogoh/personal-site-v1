@@ -1,7 +1,7 @@
-import { ISkillIcon } from "../../../constants/SkillIcons";
+import { ISkillIcon } from "../../constants/SkillIcons";
 import {
   SkillIconContainer,
-  SkillIconImg,
+  SkillIconSvgWrapper,
   SkillIconPWrapper,
   SkillIconP,
 } from "./SkillIconElements";
@@ -13,7 +13,7 @@ interface SkillIconProps {
 const SkillIcon = ({ skillIcon }: SkillIconProps) => {
   return (
     <SkillIconContainer>
-      <SkillIconImg src={skillIcon.icon} />
+      <SkillIconSvgWrapper>{skillIcon.icon}</SkillIconSvgWrapper>
       <SkillIconPWrapper>
         <SkillIconP>{skillIcon.name}</SkillIconP>
       </SkillIconPWrapper>

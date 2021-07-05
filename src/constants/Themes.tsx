@@ -1,9 +1,5 @@
 import { DefaultTheme } from "styled-components";
 
-interface IThemes {
-  [key: string]: DefaultTheme;
-}
-
 const lightTheme: DefaultTheme = {
   backgroundColor: "white",
   fontColor: "black",
@@ -14,12 +10,9 @@ const darkTheme: DefaultTheme = {
   fontColor: "white",
 };
 
-export const Themes: IThemes = {
-  light: lightTheme,
-  dark: darkTheme,
-};
+export const Themes: DefaultTheme[] = [lightTheme, darkTheme];
 
-export const ThemeNames = {
-  LIGHT: "light",
-  DARK: "dark",
-};
+export enum Theme {
+  LIGHT,
+  DARK,
+}

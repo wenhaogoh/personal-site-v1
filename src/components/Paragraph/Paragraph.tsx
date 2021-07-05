@@ -2,7 +2,7 @@ import { ReactChild } from "react";
 import { ParagraphP } from "./ParagraphElements";
 
 interface ParagraphProps {
-  children: ReactChild;
+  children: ReactChild | ReactChild[];
 }
 
 const Paragraph = ({ children }: ParagraphProps) => {

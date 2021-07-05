@@ -8,6 +8,7 @@ export const NavbarContainer = styled.nav`
   background-color: ${(props) => props.theme.backgroundColor};
   position: fixed;
   width: 100%;
+  z-index: 999;
 `;
 
 export const NavbarWrapper = styled.div`

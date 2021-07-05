@@ -11,11 +11,11 @@ import { DarkModeSwitch } from "react-toggle-dark-mode";
 import Burger from "./Burger/Burger";
 import NavbarLogo from "./NavbarLogo/NavbarLogo";
 import NavbarLink from "./NavbarLink/NavbarLink";
-import { ThemeNames } from "../../constants/Themes";
+import { Theme } from "../../constants/Themes";
 import { Dispatch } from "react";
 
 interface NavbarProps {
-  setTheme: Dispatch<SetStateAction<string>>;
+  setTheme: Dispatch<SetStateAction<Theme>>;
 }
 
 const Navbar = ({ setTheme }: NavbarProps) => {
@@ -24,9 +24,9 @@ const Navbar = ({ setTheme }: NavbarProps) => {
 
   const toggleDarkMode = () => {
     if (isDarkMode) {
-      setTheme(ThemeNames.LIGHT);
+      setTheme(Theme.LIGHT);
     } else {
-      setTheme(ThemeNames.DARK);
+      setTheme(Theme.DARK);
     }
     setIsDarkMode(!isDarkMode);
   };

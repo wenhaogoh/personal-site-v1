@@ -27,8 +27,8 @@ export const SkillsWrapper = styled.div``;
 
 export const SkillsBox = styled.div`
   background-color: white;
-  color: black;
   border: 2px solid ${(props) => props.theme.fontColor};
+  color: black;
 `;
 
 export const InnerSkillsGrid = styled.div`

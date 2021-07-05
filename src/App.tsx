@@ -1,10 +1,10 @@
 import { useState } from "react";
 import Layout from "./containers/Layout/Layout";
 import { ThemeProvider } from "styled-components";
-import { Themes, ThemeNames } from "./constants/Themes";
+import { Themes, Theme } from "./constants/Themes";
 
 function App() {
-  const [theme, setTheme] = useState<string>(ThemeNames.LIGHT);
+  const [theme, setTheme] = useState<Theme>(Theme.LIGHT);
   return (
     <ThemeProvider theme={Themes[theme]}>
       <Layout setTheme={setTheme} />
