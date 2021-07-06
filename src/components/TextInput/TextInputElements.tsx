@@ -22,4 +22,5 @@ export const TextInputInput = styled.input`
   font: inherit;
   color: ${(props) => props.theme.fontColor};
   background-color: transparent;
+  transition: border-color 0.5s;
 `;
