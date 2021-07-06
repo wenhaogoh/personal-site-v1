@@ -4,6 +4,7 @@ import Landing from "../Landing/Landing";
 import AboutMe from "../AboutMe/AboutMe";
 import Skills from "../Skills/Skills";
 import Experience from "../Experience/Experience";
+import Projects from "../Projects/Projects";
 
 const Pages = () => {
   return (
@@ -19,6 +20,9 @@ const Pages = () => {
       </Element>
       <Element name="experience">
         <Experience />
+      </Element>
+      <Element name="projects">
+        <Projects />
       </Element>
     </PagesContainer>
   );

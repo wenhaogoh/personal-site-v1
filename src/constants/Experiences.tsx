@@ -1,4 +1,5 @@
 import {
+  Databases,
   Environments,
   Frameworks,
   ISkillIcon,
@@ -6,10 +7,8 @@ import {
   Libraries,
   Platforms,
   Tools,
-  getPlaceholder,
+  getSkillIcon,
 } from "./SkillIcons";
-import { Databases } from "./SkillIcons";
-import _ from "lodash";
 
 interface Experience {
   date: string;
@@ -26,7 +25,9 @@ export const Experiences: Experience[] = [
     role: "Tech Lead",
     company: "Developer Student Club",
     url: "https://dsc.comp.nus.edu.sg/",
-    summaries: [],
+    summaries: [
+      "Leading a team of software engineers to develop a product for The Federation of Merchants' Associations Singapore (FMAS).",
+    ],
     stack: [],
   },
   {
@@ -50,6 +51,7 @@ export const Experiences: Experience[] = [
       getSkillIcon(Libraries, "Redux"),
       getSkillIcon(Tools, "Git"),
       getSkillIcon(Tools, "GitHub"),
+      getSkillIcon(Tools, "Jenkins"),
     ],
   },
   {
@@ -74,6 +76,7 @@ export const Experiences: Experience[] = [
       getSkillIcon(Platforms, "Docker"),
       getSkillIcon(Platforms, "GCP"),
       getSkillIcon(Platforms, "Heroku"),
+      getSkillIcon(Platforms, "Netlify"),
       getSkillIcon(Tools, "Git"),
       getSkillIcon(Tools, "GitHub"),
     ],
@@ -102,7 +105,3 @@ export const Experiences: Experience[] = [
     ],
   },
 ];
-
-function getSkillIcon(collection: ISkillIcon[], name: string) {
-  return _.find(collection, (x) => x.name === name) || getPlaceholder(name);
-}

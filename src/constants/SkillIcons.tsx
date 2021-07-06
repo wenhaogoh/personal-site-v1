@@ -1,4 +1,5 @@
 import { ReactElement } from "react";
+import _ from "lodash";
 
 import { ReactComponent as MySQL } from "../resources/databases/MySQL.svg";
 import { ReactComponent as PostgreSQL } from "../resources/databases/PostgreSQL.svg";
@@ -29,10 +30,12 @@ import { ReactComponent as AWS } from "../resources/platforms/AWS.svg";
 import { ReactComponent as Docker } from "../resources/platforms/Docker.svg";
 import { ReactComponent as GCP } from "../resources/platforms/GCP.svg";
 import { ReactComponent as Heroku } from "../resources/platforms/Heroku.svg";
+import { ReactComponent as Netlify } from "../resources/platforms/Netlify.svg";
 
 import { ReactComponent as Aseprite } from "../resources/tools/Aseprite.svg";
 import { ReactComponent as Git } from "../resources/tools/Git.svg";
 import { ReactComponent as GitHub } from "../resources/tools/GitHub.svg";
+import { ReactComponent as Jenkins } from "../resources/tools/Jenkins.svg";
 import { ReactComponent as Unity } from "../resources/tools/Unity.svg";
 
 import { ReactComponent as Placeholder } from "../resources/others/Placeholder.svg";
@@ -154,6 +157,10 @@ export const Platforms: ISkillIcon[] = [
     name: "Heroku",
     icon: <Heroku />,
   },
+  {
+    name: "Netlify",
+    icon: <Netlify />,
+  },
 ];
 
 export const Tools: ISkillIcon[] = [
@@ -170,14 +177,22 @@ export const Tools: ISkillIcon[] = [
     icon: <GitHub />,
   },
   {
+    name: "Jenkins",
+    icon: <Jenkins />,
+  },
+  {
     name: "Unity",
     icon: <Unity />,
   },
 ];
 
-export function getPlaceholder(name: string): ISkillIcon {
+function getPlaceholder(name: string): ISkillIcon {
   return {
     name: name,
     icon: <Placeholder />,
   };
+}
+
+export function getSkillIcon(collection: ISkillIcon[], name: string) {
+  return _.find(collection, (x) => x.name === name) || getPlaceholder(name);
 }

@@ -5,6 +5,10 @@ export const GlobalStyle = createGlobalStyle`
     background-color: ${(props) => props.theme.backgroundColor};
     color: ${(props) => props.theme.fontColor};
     transition: color .5s, background-color .5s;
+    
+    @media screen and (min-width: 1024px) {
+      font-size: 20px;
+    }
   }
 `;
 

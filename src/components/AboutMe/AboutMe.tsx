@@ -7,13 +7,13 @@ const AboutMe = () => {
     <AboutMeContainer>
       <Title>about me.</Title>
       <Paragraph>
-        I'm a year 3 computer science student studying at National University of
-        Singapore. I'm looking to specialise in the areas of Artificial
-        Intelligence and Algorithms. While most of my experience lies in full
-        stack development, I've also dabbled with game development on Unity.
+        I'm a year 3 computer science student who is looking to specialise in
+        the areas of Artificial Intelligence and Algorithms studying at National
+        University of Singapore. While most of my experience lie in full stack
+        development, I've also dabbled with game development on Unity.
       </Paragraph>
       <Paragraph>
-        A board game that has been a passion of mine since age 6 is Go. When
+        The ancient game of Go has been a passion of mine since I was 6. When
         AlphaGo triumphed over the top professional Go player back in 2016, I
         was entranced. It was at that same moment I was introduced to the world
         of computer science.

@@ -9,6 +9,7 @@ export const NavbarContainer = styled.nav`
   position: fixed;
   width: 100%;
   z-index: 999;
+  transition: background-color 0.5s; !important
 `;
 
 export const NavbarWrapper = styled.div`
