@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const UnderlinedLinkA = styled.a`
+export const UnderlinedButtonContainer = styled.div`
   display: inline-block;
   position: relative;
   color: inherit;
