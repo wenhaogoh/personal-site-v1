@@ -23,4 +23,5 @@ export const TextInputInput = styled.input`
   color: ${(props) => props.theme.fontColor};
   background-color: transparent;
   transition: border-color 0.5s;
+  border-radius: 0;
 `;

@@ -25,4 +25,5 @@ export const TextAreaTextArea = styled.textarea`
   background-color: transparent;
   resize: none;
   transition: border-color 0.5s;
+  border-radius: 0;
 `;
