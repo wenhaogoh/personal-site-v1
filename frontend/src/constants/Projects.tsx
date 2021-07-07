@@ -66,4 +66,19 @@ export const Projects: Project[] = [
       getSkillIcon(Tools, "Unity"),
     ],
   },
+  {
+    title: "DoneDeal",
+    github:
+      "https://github.com/wenhaogoh/DoneDeal}{github.com/wenhaogoh/DoneDeal",
+    summaries: [
+      "Created an android application which assists users to record, track and breakdown shared expenses among peers.",
+    ],
+    stack: [
+      getSkillIcon(Databases, "SQLite"),
+      getSkillIcon(Environments, "AndroidStudio"),
+      getSkillIcon(Languages, "Java"),
+      getSkillIcon(Tools, "Git"),
+      getSkillIcon(Tools, "GitHub"),
+    ],
+  },
 ];

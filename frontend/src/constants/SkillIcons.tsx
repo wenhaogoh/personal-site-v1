@@ -54,17 +54,17 @@ export const Databases: ISkillIcon[] = [
     name: "PostgreSQL",
     icon: <PostgreSQL />,
   },
-  // {
-  //   name: "SQLite",
-  //   icon: <SQLite />,
-  // },
+  {
+    name: "SQLite",
+    icon: <Placeholder />,
+  },
 ];
 
 export const Environments: ISkillIcon[] = [
-  // {
-  //   name: "Android Studio",
-  //   icon: <AndroidStudio />,
-  // },
+  {
+    name: "Android Studio",
+    icon: <Placeholder />,
+  },
   {
     name: "NodeJS",
     icon: <NodeJS />,
@@ -134,10 +134,10 @@ export const Libraries: ISkillIcon[] = [
     name: "Redux",
     icon: <Redux />,
   },
-  // {
-  //   name: "Sequelize",
-  //   icon: <Sequelize />,
-  // },
+  {
+    name: "Sequelize",
+    icon: <Placeholder />,
+  },
 ];
 
 export const Platforms: ISkillIcon[] = [

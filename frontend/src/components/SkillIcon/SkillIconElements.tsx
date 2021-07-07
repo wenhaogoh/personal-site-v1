@@ -34,4 +34,6 @@ export const SkillIconP = styled.p`
   margin: 0 auto;
   padding-top 0.2rem;
   transition: opacity 0.2s ease-in;
+  width: 100px;
+  text-align: center;
 `;

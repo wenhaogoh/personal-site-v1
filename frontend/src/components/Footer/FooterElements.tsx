@@ -8,6 +8,6 @@ export const FooterContainer = styled.div`
     justify-content: space-between;
     max-width: 1200px;
     margin: 0 auto;
-    padding-bottom: 3rem;
+    padding: 5rem 1.5rem 3rem 1.5rem;
   }
 `;

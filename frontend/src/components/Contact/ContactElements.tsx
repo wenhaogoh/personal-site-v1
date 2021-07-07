@@ -6,4 +6,8 @@ export const ContactContainer = styled.div`
 
 export const ContactFormWrapper = styled.div`
   padding-bottom: 1rem;
+
+  @media screen and (min-width: 1024px) {
+    padding-bottom: 3rem;
+  }
 `;
