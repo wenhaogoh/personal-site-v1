@@ -16,7 +16,7 @@ import {
   Platforms,
   Tools,
   Environments,
-} from "../../constants/SkillIcons";
+} from "../../consts/SkillIcons";
 
 const Skills = () => {
   return (

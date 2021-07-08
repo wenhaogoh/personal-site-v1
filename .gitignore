@@ -10,3 +10,4 @@ backend/build
 backend/.DS_Store
 backend/package-lock.json
 backend/dist
+backend/.env*

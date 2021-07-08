@@ -5,17 +5,31 @@ import TextInput from "../TextInput/TextInput";
 import { useState } from "react";
 import TextArea from "../TextArea/TextArea";
 import UnderlinedButton from "../UnderlinedButton/UnderlinedButton";
+import axios from "axios";
+import Loader from "react-spinners/ClipLoader";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 interface FormState {
   [key: string]: string;
 }
 
+const isEmpty = (str: string) => !str || str.length === 0;
+
+const hasEmptyField = (formState: FormState) =>
+  isEmpty(formState["name"].trim()) ||
+  isEmpty(formState["email"].trim()) ||
+  isEmpty(formState["content"].trim());
+
 const Contact = () => {
   const [formState, setFormState] = useState<FormState>({
     name: "",
     email: "",
-    message: "",
+    content: "",
   });
+  const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
+
+  toast.configure();
 
   const formStateHandler = (
     event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
@@ -27,7 +41,22 @@ const Contact = () => {
   };
 
   const formSubmitHandler = () => {
-    console.log(formState);
+    if (hasEmptyField(formState)) {
+      toast.error("Fields cannot be empty!");
+      return;
+    }
+    setIsSubmitting(true);
+    axios
+      .post("/messages", formState)
+      .then(() => {
+        toast.success("Message sent!");
+      })
+      .catch(() => {
+        toast.error("Failed to send message! Please try again.");
+      })
+      .finally(() => {
+        setIsSubmitting(false);
+      });
   };
 
   return (
@@ -49,11 +78,15 @@ const Contact = () => {
         />
         <TextArea
           label={"message."}
-          value={formState["message"]}
-          onChange={(event) => formStateHandler(event, "message")}
+          value={formState["content"]}
+          onChange={(event) => formStateHandler(event, "content")}
         />
       </ContactFormWrapper>
-      <UnderlinedButton onClick={formSubmitHandler}>submit.</UnderlinedButton>
+      {isSubmitting ? (
+        <Loader />
+      ) : (
+        <UnderlinedButton onClick={formSubmitHandler}>submit.</UnderlinedButton>
+      )}
     </ContactContainer>
   );
 };

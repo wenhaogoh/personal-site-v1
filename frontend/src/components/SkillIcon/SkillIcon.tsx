@@ -1,4 +1,4 @@
-import { ISkillIcon } from "../../constants/SkillIcons";
+import { ISkillIcon } from "../../consts/SkillIcons";
 import {
   SkillIconContainer,
   SkillIconSvgWrapper,

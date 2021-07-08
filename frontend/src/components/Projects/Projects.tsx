@@ -9,7 +9,7 @@ import {
   ProjectStackBox,
   ProjectStackGrid,
 } from "./ProjectsElements";
-import { Projects as ProjectList } from "../../constants/Projects";
+import { Projects as ProjectList } from "../../consts/Projects";
 import Title from "../Title/Title";
 import UnderlinedLink from "../UnderlinedLink/UnderlinedLink";
 import SkillIcon from "../SkillIcon/SkillIcon";

@@ -21,7 +21,8 @@ const AboutMe = () => {
       <Paragraph>
         Since then, I've been repeatedly amazed by the boundless possibilities
         of technology and its to potential to change lives. And I've fallen in
-        love with building beautiful applications that are both fun and useful.
+        love with building beautiful applications that are both cool and
+        impactful.
       </Paragraph>
     </AboutMeContainer>
   );

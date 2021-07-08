@@ -13,7 +13,7 @@ import {
 import SkillIcon from "../SkillIcon/SkillIcon";
 import Title from "../Title/Title";
 import UnderlinedLink from "../UnderlinedLink/UnderlinedLink";
-import { Experiences } from "../../constants/Experiences";
+import { Experiences } from "../../consts/Experiences";
 
 const Experience = () => {
   return (

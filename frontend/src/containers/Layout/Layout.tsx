@@ -3,7 +3,7 @@ import { GlobalStyle, LayoutContainer } from "./LayoutElements";
 import Navbar from "../../components/Navbar/Navbar";
 import Pages from "../../components/Pages/Pages";
 import Footer from "../../components/Footer/Footer";
-import { Theme } from "../../constants/Themes";
+import { Theme } from "../../consts/Themes";
 
 interface LayoutProps {
   setTheme: Dispatch<SetStateAction<Theme>>;

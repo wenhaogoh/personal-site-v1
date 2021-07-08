@@ -11,7 +11,7 @@ import { DarkModeSwitch } from "react-toggle-dark-mode";
 import Burger from "./Burger/Burger";
 import NavbarLogo from "./NavbarLogo/NavbarLogo";
 import NavbarLink from "./NavbarLink/NavbarLink";
-import { Theme } from "../../constants/Themes";
+import { Theme } from "../../consts/Themes";
 import { Dispatch } from "react";
 
 interface NavbarProps {
