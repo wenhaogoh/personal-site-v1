@@ -1,2 +1,10 @@
 runtime: nodejs14
+
 service: backend
+
+env_variables:
+  ON_GAE: "true"
+  GCSQL_DB_USER: $GCSQL_DB_USER
+  GCSQL_DB_PASS: $GCSQL_DB_PASS
+  GCSQL_DB_NAME: $GCSQL_DB_NAME
+  GCSQL_CONNECTION_NAME: $GCSQL_CONNECTION_NAME

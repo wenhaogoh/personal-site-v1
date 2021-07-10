@@ -5,24 +5,13 @@ import { DATABASE_URL, ON_GAE } from "../consts";
 let sequelize: Sequelize;
 
 if (ON_GAE) {
-  const {
-    GCSQL_DB_USER,
-    GCSQL_DB_PASS,
-    GCSQL_DB_NAME,
-    GCSQL_CONNECTION_NAME,
-    GCSQL_DB_SOCKET_PATH,
-  } = process.env;
+  const { GCSQL_DB_USER, GCSQL_DB_PASS, GCSQL_DB_NAME, GCSQL_CONNECTION_NAME } =
+    process.env;
 
   sequelize = new Sequelize(GCSQL_DB_NAME!, GCSQL_DB_USER!, GCSQL_DB_PASS!, {
     logging: console.log,
     dialect: "postgres",
-    host: `${GCSQL_DB_SOCKET_PATH!}/${GCSQL_CONNECTION_NAME!}`,
-  });
-} else if (process.env.NODE_ENV === "production") {
-  // See https://github.com/sequelize/sequelize/issues/956 for more info
-  sequelize = new Sequelize(DATABASE_URL, {
-    logging: console.log,
-    dialectOptions: { ssl: { require: true, rejectUnauthorized: false } },
+    host: `/cloudsql/${GCSQL_CONNECTION_NAME!}`,
   });
 } else {
   // Local development
