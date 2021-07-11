@@ -1,0 +1,31 @@
+name: Deploy backend to Google App Engine
+
+on:
+  workflow_dispatch:
+
+jobs:
+  deploy-gae:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Substitute environment variables for app.yaml and deploy/source_env.sh
+        env:
+          GCSQL_DB_USER: ${{ secrets.GCSQL_DB_USER }}
+          GCSQL_DB_PASS: ${{ secrets.GCSQL_DB_PASS }} 
+          GCSQL_DB_NAME: ${{ secrets.GCSQL_DB_NAME }}
+          GCSQL_CONNECTION_NAME: ${{ secrets.GCSQL_CONNECTION_NAME }}
+        run: |
+          envsubst < backend/app.yaml > backend/tmp.yaml && mv backend/tmp.yaml backend/app.yaml
+          envsubst < backend/deploy/source_env.sh > backend/tmp.yaml && mv backend/tmp.yaml backend/deploy/source_env.sh
+
+      - name: Set up Cloud SDK
+        uses: google-github-actions/setup-gcloud@master
+        with:
+          project_id: ${{ secrets.GCP_PROJECT_ID }}
+          service_account_key: ${{ secrets.GCP_SA_KEY }}
+          export_default_credentials: true
+
+      # --quiet disables all interactive input and uses default values
+      - name: Deploy to Google App Engine
+        run: gcloud app deploy --quiet backend/app.yaml
