@@ -14,3 +14,16 @@ export const TypewriterWrapper = styled.div`
   font-size: 2em;
   font-weight: bold;
 `;
+
+export const LinksWrapper = styled.div`
+  margin: 1em 0;
+`;
+
+export const LinkWrapper = styled.div`
+  display: inline-block;
+  padding-right: 1rem;
+
+  @media screen and (min-width: 1024px) {
+    padding-right: 2rem;
+  }
+`;
