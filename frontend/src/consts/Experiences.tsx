@@ -54,7 +54,7 @@ export const Experiences: Experience[] = [
     summaries: [
       "Working with the Federation of Merchants Associations Singapore (FMAS) to develop a web app that showcases their hawker stalls.",
       "Leading a team of 8 software engineers for the setup and maintainence back-end and front-end services.",
-      "Built an admin console for the ease of data management",
+      "Built an admin console for the ease of data management.",
     ],
     stack: [
       getSkillIcon(Databases, "PostgreSQL"),
