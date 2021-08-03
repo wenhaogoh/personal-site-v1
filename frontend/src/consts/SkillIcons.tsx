@@ -3,13 +3,15 @@ import _ from "lodash";
 
 import { ReactComponent as MySQL } from "../resources/databases/MySQL.svg";
 import { ReactComponent as PostgreSQL } from "../resources/databases/PostgreSQL.svg";
-// import { ReactComponent as SQLite } from "../resources/databases/SQLite.svg";
+import { ReactComponent as SQLite } from "../resources/databases/SQLite.svg";
 
-// import { ReactComponent as AndroidStudio } from "../resources/environments/AndroidStudio.svg";
+import { ReactComponent as AndroidStudio } from "../resources/environments/AndroidStudio.svg";
 import { ReactComponent as NodeJS } from "../resources/environments/NodeJS.svg";
 
 import { ReactComponent as Bootstrap } from "../resources/frameworks/Bootstrap.svg";
 import { ReactComponent as Express } from "../resources/frameworks/Express.svg";
+import { ReactComponent as Mocha } from "../resources/frameworks/Mocha.svg";
+import { ReactComponent as Selenium } from "../resources/frameworks/Selenium.svg";
 import { ReactComponent as Spring } from "../resources/frameworks/Spring.svg";
 
 import { ReactComponent as C } from "../resources/languages/C.svg";
@@ -22,9 +24,10 @@ import { ReactComponent as Pug } from "../resources/languages/Pug.svg";
 import { ReactComponent as Python } from "../resources/languages/Python.svg";
 import { ReactComponent as TypeScript } from "../resources/languages/TypeScript.svg";
 
+import { ReactComponent as MaterialUI } from "../resources/libraries/MaterialUI.svg";
 import { ReactComponent as ReactJS } from "../resources/libraries/React.svg";
 import { ReactComponent as Redux } from "../resources/libraries/Redux.svg";
-// import { ReactComponent as Sequelize } from "../resources/libraries/Sequelize.svg";
+import { ReactComponent as Sequelize } from "../resources/libraries/Sequelize.svg";
 
 import { ReactComponent as AWS } from "../resources/platforms/AWS.svg";
 import { ReactComponent as Docker } from "../resources/platforms/Docker.svg";
@@ -56,14 +59,14 @@ export const Databases: ISkillIcon[] = [
   },
   {
     name: "SQLite",
-    icon: <Placeholder />,
+    icon: <SQLite />,
   },
 ];
 
 export const Environments: ISkillIcon[] = [
   {
     name: "Android Studio",
-    icon: <Placeholder />,
+    icon: <AndroidStudio />,
   },
   {
     name: "NodeJS",
@@ -79,6 +82,14 @@ export const Frameworks: ISkillIcon[] = [
   {
     name: "Express",
     icon: <Express />,
+  },
+  {
+    name: "Mocha",
+    icon: <Mocha />,
+  },
+  {
+    name: "Selenium",
+    icon: <Selenium />,
   },
   {
     name: "Spring",
@@ -127,6 +138,10 @@ export const Languages: ISkillIcon[] = [
 
 export const Libraries: ISkillIcon[] = [
   {
+    name: "MaterialUI",
+    icon: <MaterialUI />,
+  },
+  {
     name: "React",
     icon: <ReactJS />,
   },
@@ -136,7 +151,7 @@ export const Libraries: ISkillIcon[] = [
   },
   {
     name: "Sequelize",
-    icon: <Placeholder />,
+    icon: <Sequelize />,
   },
 ];
 

@@ -43,9 +43,7 @@ export const Projects: Project[] = [
   {
     title: "NUSave",
     github: "https://github.com/wenhaogoh/tp",
-    summaries: [
-      "Created an application which assists students to manage their finances.",
-    ],
+    summaries: ["An app that assists students in managing their finances."],
     stack: [
       getSkillIcon(Languages, "Java"),
       getSkillIcon(Tools, "Git"),
@@ -56,7 +54,7 @@ export const Projects: Project[] = [
     title: "Til Kingdom Come",
     github: "https://github.com/wenhaogoh/tp",
     summaries: [
-      "Created a 2D medieval fighting game with original artwork and music that supports online multiplayer.",
+      "An online multiplayer 2D medieval fighting game with original artwork and music.",
     ],
     stack: [
       getSkillIcon(Languages, "C#"),
@@ -71,11 +69,11 @@ export const Projects: Project[] = [
     github:
       "https://github.com/wenhaogoh/DoneDeal}{github.com/wenhaogoh/DoneDeal",
     summaries: [
-      "Created an android application which assists users to record, track and breakdown shared expenses among peers.",
+      "An android app that assists users in recording, tracking and splitting shared expenses.",
     ],
     stack: [
       getSkillIcon(Databases, "SQLite"),
-      getSkillIcon(Environments, "AndroidStudio"),
+      getSkillIcon(Environments, "Android Studio"),
       getSkillIcon(Languages, "Java"),
       getSkillIcon(Tools, "Git"),
       getSkillIcon(Tools, "GitHub"),

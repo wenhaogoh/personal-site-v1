@@ -30,6 +30,7 @@ export const SkillsBox = styled.div`
   border: 2px solid ${(props) => props.theme.fontColor};
   color: black;
   transition: border-color 0.5s;
+  border-radius: 20px;
 `;
 
 export const InnerSkillsGrid = styled.div`

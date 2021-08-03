@@ -21,22 +21,12 @@ interface Experience {
 
 export const Experiences: Experience[] = [
   {
-    date: "May 2021 - Present",
-    role: "Tech Lead",
-    company: "Developer Student Club",
-    url: "https://dsc.comp.nus.edu.sg/",
-    summaries: [
-      "Leading a team of software engineers to develop a product for The Federation of Merchants' Associations Singapore (FMAS).",
-    ],
-    stack: [],
-  },
-  {
-    date: "Jan 2021 - Present",
-    role: "Backend Software Engineer Intern",
+    date: "Jan 2021 - July 2021",
+    role: "Software Engineer Intern",
     company: "PayPal",
     url: "https://www.paypal.com/",
     summaries: [
-      "Participated in agile sprints where I implemented new features and enhanced existing ones, and fixed bugs for the compliance team's internal case management system.",
+      "Participated in agile sprints where I implemented new features and enhanced existing ones, and fixed live issues for the compliance team's internal case management system.",
       "Refactored code to optimise database queries and increase test coverage.",
       "Set up Enterprise Continuous Delivery (ECD) pipelines to ensure minimal service disruption.",
     ],
@@ -44,6 +34,8 @@ export const Experiences: Experience[] = [
       getSkillIcon(Databases, "MySQL"),
       getSkillIcon(Environments, "NodeJS"),
       getSkillIcon(Frameworks, "Express"),
+      getSkillIcon(Frameworks, "Mocha"),
+      getSkillIcon(Frameworks, "Selenium"),
       getSkillIcon(Frameworks, "Spring"),
       getSkillIcon(Languages, "Java"),
       getSkillIcon(Languages, "JavaScript"),
@@ -55,13 +47,14 @@ export const Experiences: Experience[] = [
     ],
   },
   {
-    date: "September 2020 - May 2021",
-    role: "Software Engineer",
+    date: "August 2020 - Present",
+    role: "Tech Lead",
     company: "Developer Student Club",
     url: "https://dsc.comp.nus.edu.sg/",
     summaries: [
-      "Led the back-end team for the setup and maintenance of back-end services.",
-      "Built an admin console for ease of data management.",
+      "Working with the Federation of Merchants Associations Singapore (FMAS) to develop a web app that showcases their hawker stalls.",
+      "Leading a team of 8 software engineers for the setup and maintainence back-end and front-end services.",
+      "Built an admin console for the ease of data management",
     ],
     stack: [
       getSkillIcon(Databases, "PostgreSQL"),
@@ -70,6 +63,7 @@ export const Experiences: Experience[] = [
       getSkillIcon(Frameworks, "Express"),
       getSkillIcon(Languages, "JavaScript"),
       getSkillIcon(Languages, "TypeScript"),
+      getSkillIcon(Libraries, "MaterialUI"),
       getSkillIcon(Libraries, "React"),
       getSkillIcon(Libraries, "Redux"),
       getSkillIcon(Libraries, "Sequelize"),
