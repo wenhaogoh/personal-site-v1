@@ -59,7 +59,6 @@ export const Experiences: Experience[] = [
     stack: [
       getSkillIcon(Databases, "PostgreSQL"),
       getSkillIcon(Environments, "NodeJS"),
-      getSkillIcon(Frameworks, "Bootstrap"),
       getSkillIcon(Frameworks, "Express"),
       getSkillIcon(Languages, "JavaScript"),
       getSkillIcon(Languages, "TypeScript"),
