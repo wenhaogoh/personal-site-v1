@@ -16,7 +16,7 @@ const AboutMe = () => {
         reanalysing, and rebuilding old code &#128517;.
       </Paragraph>
       <Paragraph>
-        I have been a teaching assistant for:
+        I've been a teaching assistant for the following modules:
         <AboutMeUl>
           <AboutMeLi>CS1101S: Programming Methodology I</AboutMeLi>
           <AboutMeLi>CS2105: Introduction to Computer Networks</AboutMeLi>
