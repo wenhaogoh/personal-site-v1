@@ -17,11 +17,12 @@ const Landing = () => {
         <TypewriterWrapper>
           <Typewriter
             options={{
-              strings: "Hey there! I'm Wen Hao.",
+              strings: "Hey there!",
               autoStart: true,
             }}
           />
         </TypewriterWrapper>
+        <Paragraph>I'm Wen Hao.</Paragraph>
         <Paragraph>
           I enjoy solving difficult problems, writing good code and well-brewed
           coffee :)

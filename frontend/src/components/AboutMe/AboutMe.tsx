@@ -13,7 +13,7 @@ const AboutMe = () => {
         come to appreciate the saying: writing code is easy, writing good code
         is hard. I’m not sure if it's passion or just obsession, but I often
         find myself spending way more time than I should refactoring,
-        reanalysing, and rebuilding old code &#128517;.
+        reanalysing, and rebuilding old code &#128517;
       </Paragraph>
       <Paragraph>
         I've been a teaching assistant for the following modules:
