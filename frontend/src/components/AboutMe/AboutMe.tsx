@@ -1,4 +1,4 @@
-import { AboutMeContainer } from "./AboutMeElements";
+import { AboutMeContainer, AboutMeLi, AboutMeUl } from "./AboutMeElements";
 import Title from "../Title/Title";
 import Paragraph from "../Paragraph/Paragraph";
 
@@ -9,20 +9,18 @@ const AboutMe = () => {
       <Paragraph>
         I'm a year 3 computer science student who is looking to specialise in
         the areas of Artificial Intelligence and Algorithms studying at National
-        University of Singapore. While most of my experience lie in full stack
-        development, I've also dabbled with game development on Unity.
+        University of Singapore. Over the course of my programming journey, I've
+        come to appreciate the saying: writing code is easy, writing good code
+        is hard. I’m not sure if it's passion or just obsession, but I often
+        find myself spending way more time than I should refactoring,
+        reanalysing, and rebuilding old code &#128517;.
       </Paragraph>
       <Paragraph>
-        The ancient game of Go has been a passion of mine since I was 6. When
-        AlphaGo triumphed over the top professional Go player back in 2016, I
-        was entranced. It was at that same moment I was introduced to the world
-        of computer science.
-      </Paragraph>
-      <Paragraph>
-        Since then, I've been repeatedly amazed by the boundless possibilities
-        of technology and its to potential to change lives. And I've fallen in
-        love with building beautiful applications that are both cool and
-        impactful.
+        I have been a teaching assistant for:
+        <AboutMeUl>
+          <AboutMeLi>CS1101S: Programming Methodology I</AboutMeLi>
+          <AboutMeLi>CS2105: Introduction to Computer Networks</AboutMeLi>
+        </AboutMeUl>
       </Paragraph>
     </AboutMeContainer>
   );

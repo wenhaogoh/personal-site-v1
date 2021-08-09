@@ -17,17 +17,20 @@ const Landing = () => {
         <TypewriterWrapper>
           <Typewriter
             options={{
-              strings: "Hello world!",
+              strings: "Hey there! I'm Wen Hao.",
               autoStart: true,
             }}
           />
         </TypewriterWrapper>
         <Paragraph>
-          I'm Wen Hao and I'm an aspiring software engineer.
+          I enjoy solving difficult problems, writing good code and well-brewed
+          coffee :)
         </Paragraph>
         <Paragraph>
-          Currently interning @{" "}
-          <UnderlinedLink url="https://www.paypal.com/">PayPal</UnderlinedLink>
+          Currently studying @{" "}
+          <UnderlinedLink url="https://nus.edu.sg/">
+            National University of Singapore
+          </UnderlinedLink>
         </Paragraph>
         <LinksWrapper>
           <LinkWrapper>
