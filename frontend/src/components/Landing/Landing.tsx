@@ -25,7 +25,7 @@ const Landing = () => {
         <Paragraph>I'm Wen Hao.</Paragraph>
         <Paragraph>
           I enjoy solving difficult problems, writing good code and well-brewed
-          coffee :)
+          coffee &#9749;
         </Paragraph>
         <Paragraph>
           Currently studying @{" "}

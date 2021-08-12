@@ -9,11 +9,14 @@ const AboutMe = () => {
       <Paragraph>
         I'm a year 3 computer science student who is looking to specialise in
         the areas of Artificial Intelligence and Algorithms studying at National
-        University of Singapore. Over the course of my programming journey, I've
-        come to appreciate the saying: writing code is easy, writing good code
-        is hard. I’m not sure if it's passion or just obsession, but I often
-        find myself spending way more time than I should refactoring,
-        reanalysing, and rebuilding old code &#128517;
+        University of Singapore.
+      </Paragraph>
+      <Paragraph>
+        Over the course of my programming journey, I've come to appreciate the
+        saying: writing code is easy, writing good code is hard. Not sure if
+        it's passion or just obsession, but I often find myself spending way
+        more time than I should refactoring, reanalysing, and rebuilding old
+        code &#128517;
       </Paragraph>
       <Paragraph>
         I've been a teaching assistant for the following modules:

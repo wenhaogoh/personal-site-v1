@@ -1,6 +1,6 @@
 {
   "short_name": "wenhao.",
-  "name": "Wen Hao's personal site",
+  "name": "Built with React, TypeScript and deployed on Google Cloud Platform.",
   "icons": [
     {
       "src": "favicon.ico",
