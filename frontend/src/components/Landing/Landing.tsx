@@ -49,7 +49,7 @@ const Landing = () => {
           <LinkWrapper>
             <ReverseUnderlinedLink
               url={
-                "https://drive.google.com/uc?export=download&id=1e7ouYCt5jeHm5N4de4zPqVHSd2rT2DhP"
+                "https://drive.google.com/uc?export=download&id=11qL45NCbE1sFuK_QqD88D13rsIOa4zFm"
               }
             >
               resume.

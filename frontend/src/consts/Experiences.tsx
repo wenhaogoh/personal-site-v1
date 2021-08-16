@@ -27,6 +27,7 @@ export const Experiences: Experience[] = [
     url: "https://www.paypal.com/",
     summaries: [
       "Participated in agile sprints where I implemented new features and enhanced existing ones, and fixed live issues for the compliance team's internal case management system.",
+      "Implemented PIN verification widget that facilitates PayPal’s KYC process.",
       "Refactored code to optimise database queries and increase test coverage.",
       "Set up Enterprise Continuous Delivery (ECD) pipelines to ensure minimal service disruption.",
     ],
