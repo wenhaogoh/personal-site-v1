@@ -52,7 +52,7 @@ export const Projects: Project[] = [
   },
   {
     title: "Til Kingdom Come",
-    github: "https://github.com/wenhaogoh/tp",
+    github: "https://github.com/wenhaogoh/Til-Kingdom-Come",
     summaries: [
       "An online multiplayer 2D medieval fighting game with original artwork and music.",
     ],
@@ -66,8 +66,7 @@ export const Projects: Project[] = [
   },
   {
     title: "DoneDeal",
-    github:
-      "https://github.com/wenhaogoh/DoneDeal}{github.com/wenhaogoh/DoneDeal",
+    github: "https://github.com/wenhaogoh/DoneDeal",
     summaries: [
       "An android app that assists users in recording, tracking and splitting shared expenses.",
     ],
